@@ -6,26 +6,7 @@ const Frog = function(){
         return `rgb(${Math.floor(getRandomNumber(255))},${Math.floor(getRandomNumber(255))},${Math.floor(getRandomNumber(255))})`
     }
 
-    const _frogs = [
-        // {
-        //     id: 'f1',
-        //     location: {xpos: getRandomNumber(820), ypos: getRandomNumber(420) + 60},
-        //     color: getRandomColor(),
-        //     size: function(){return ((550 - (550 - this.location.ypos)) / 60 + 1)}  
-        // },
-        // {
-        //     id: 'f2',
-        //     location: {xpos: getRandomNumber(820), ypos: getRandomNumber(420) + 60},
-        //     color: getRandomColor(),
-        //     size: function(){return ((550 - (550 - this.location.ypos)) / 60 + 1)}  
-        // },
-        // {
-        //     id: 'f3',
-        //     location: {xpos: getRandomNumber(820), ypos: getRandomNumber(420) + 60},
-        //     color: getRandomColor(),
-        //     size: function(){return ((550 - (550 - this.location.ypos)) / 60 + 1)}  
-        // }
-    ]
+    const _frogs = []
     let frogsId   
     let level 
     
@@ -33,7 +14,7 @@ const Frog = function(){
     const getFrogs = () => _frogs
     
     const addFrog = () => {
-        const xpos = getRandomNumber(900) + 10
+        const xpos = getRandomNumber(800) + 10
         const ypos = getRandomNumber(400) + 70
         const color = getRandomColor()
         _frogs.push({
