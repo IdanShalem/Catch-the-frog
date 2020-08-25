@@ -14,7 +14,7 @@ const Frog = function(){
     const getFrogs = () => _frogs
     
     const addFrog = () => {
-        const xpos = getRandomNumber(800) + 10
+        const xpos = getRandomNumber(820) + 10
         const ypos = getRandomNumber(400) + 70
         const color = getRandomColor()
         _frogs.push({
